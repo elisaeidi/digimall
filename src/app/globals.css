@@ -1,0 +1,53 @@
+/* افزودن کلاسهای بیس */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {}
+
+@layer utilities {
+   body {
+      @apply flex-1 flex flex-row justify-between text-fuchsia-950 border-red-300
+   }
+
+   .navbar {
+      @apply  flex flex-col relative
+   }
+
+   .hoverLink {
+      @apply hover:text-blue-700
+   }
+
+   .input {
+      @apply border border-gray-300 outline-none m-2 rounded-lg p-2 hover:shadow-md
+   }
+
+}
+.container{
+   /*background-color: red;
+   */display: flex;
+   flex: 1;
+   flex-direction: row;
+   justify-content: center;
+   align-items:baseline;
+   flex-wrap: wrap;
+   border: 1px solid gray;
+   border-radius:.5rem ;
+   margin: 1rem;
+   padding: .5rem;
+}
+
+.shoppingCart{
+   flex-basis: 75%;
+   flex-direction: column;
+   flex-shrink: 1;
+   order: 0;
+   
+   }
+   .summery{
+      background-color: rgb(235, 232, 232);
+      flex-basis: 25%;
+      flex-direction: column;
+      flex-shrink: 1;
+      padding: .5rem;
+}

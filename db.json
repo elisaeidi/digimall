@@ -1,0 +1,270 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "email": "email",
+      "password": "password"
+    },
+    {
+      "id": "f314",
+      "email": "eng.saeedi1993@gmail.com",
+      "body": "02020020000"
+    },
+    {
+      "id": "446c",
+      "email": "eng.saeedi1993@gmail.com",
+      "body": "02020020000"
+    },
+    {
+      "id": "fa51",
+      "email": "eng.saeedi@gmail.com",
+      "body": "66666"
+    }
+  ],
+  "getProduct": [
+    {
+      "name": "xiaomi",
+      "code": "13 Global",
+      "productkind": "mobile",
+      "url": "/images/newmobile.jpg",
+      "price": 200,
+      "discount": 10,
+      "id": "cbb5",
+      "productCount": 0,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "laptop",
+      "productkind": "laptop",
+      "url": "/images/laptop.jpg",
+      "price": 600000000000,
+      "discount": 2,
+      "id": "47b0",
+      "productCount": 31,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "airpods pro",
+      "code": "pro",
+      "productkind": "accessories",
+      "url": "/images/airpods.jpg",
+      "price": 1500000,
+      "discount": 5,
+      "id": "f810",
+      "productCount": 47,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "powerbank",
+      "code": "230",
+      "productkind": "accessories",
+      "url": "/images/powerbank.webp",
+      "price": 20,
+      "discount": 4,
+      "id": "c957",
+      "productCount": 5,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "SamSong",
+      "code": "S-23",
+      "productkind": "mobile",
+      "url": "/images/samsong-s23.jpg",
+      "price": 250,
+      "discount": 9,
+      "id": "fccd",
+      "productCount": 17,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "laptop",
+      "productkind": "laptop",
+      "url": "/images/laptop.jpg",
+      "price": 230,
+      "discount": 10,
+      "id": "498b",
+      "productCount": 10,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "airpods",
+      "code": "Galaxy Buds2 Pro",
+      "productkind": "accessories",
+      "url": "/images/galaxyBuds2Pro.jpg",
+      "price": 40,
+      "discount": 1.5,
+      "id": "5646",
+      "productCount": 23,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "powerbank",
+      "code": "953",
+      "productkind": "accessories",
+      "url": "/images/powerbank.webp",
+      "price": 25,
+      "discount": 6,
+      "id": "c31b",
+      "productCount": 16,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "NOKIA",
+      "code": "G-20",
+      "productkind": "mobile",
+      "url": "/images/NOKIA_G20.jpg",
+      "price": 170,
+      "id": "a56e",
+      "productCount": 15,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "laptop",
+      "productkind": "laptop",
+      "url": "/images/laptop.jpg",
+      "price": 400,
+      "discount": 2.5,
+      "id": "3a63",
+      "productCount": 20,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "airpods",
+      "code": "buds 4 Pro",
+      "productkind": "accessories",
+      "url": "/images/buds4Pro.jpg",
+      "price": 30,
+      "id": "89af",
+      "productCount": 9,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "powerbank",
+      "code": "814",
+      "productkind": "accessories",
+      "url": "/images/powerbank.webp",
+      "price": 55,
+      "discount": 10,
+      "id": "292f",
+      "productCount": 55,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "iphone",
+      "code": "13 promax",
+      "productkind": "mobile",
+      "url": "/images/mobiles.jpg",
+      "price": 300,
+      "discount": 5.5,
+      "id": "538c",
+      "productCount": 25,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "laptop",
+      "productkind": "laptop",
+      "url": "/images/laptop.jpg",
+      "price": 130,
+      "discount": 8.2,
+      "id": "6d16",
+      "productCount": 12,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "airpods",
+      "productkind": "accessories",
+      "url": "/images/airpods.jpg",
+      "price": 20,
+      "discount": 1.8,
+      "id": "8233",
+      "productCount": 15,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    },
+    {
+      "name": "powerbank",
+      "code": "1010",
+      "productkind": "accessories",
+      "url": "/images/powerbank.webp",
+      "price": 20,
+      "discount": 14,
+      "id": "13d0",
+      "productCount": 50,
+      "discription": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ."
+    }
+  ],
+  "address": [
+    {}
+  ],
+  "createAddress": [{
+    "state": [
+      {
+        "name": "یک استان انتخاب کنید",
+        "id": ""
+      },
+      {
+        "name": "تهران",
+        "id": "021"
+      },
+      {
+        "name": "کرمان",
+        "id": "034"
+      },
+      {
+        "name": "فارس",
+        "id": "071"
+      },
+      {
+        "name": "اصفهان",
+        "id": "061"
+      }
+    ],
+    "cities":[
+      {
+        "name":"تهران",
+        "id":"0211",
+        "stateId":"021"
+      },
+      {
+        "name":"کرج",
+        "id":"0212",
+        "stateId":"021"
+      },
+      {
+        "name":"کرمان",
+        "id":"0343",
+        "stateId":"034"
+      },
+      {
+        "name":"رفسنجان",
+        "id":"0344",
+        "stateId":"034"
+      },
+      {
+        "name":"سیرجان",
+        "id":"0342",
+        "stateId":"034"
+      },
+      {
+        "name":"شیراز",
+        "id":"0711",
+        "stateId":"071"
+      },
+      {
+        "name":"آباده",
+        "id":"0712",
+        "stateId":"071"
+      },
+      {
+        "name":"اصفهان",
+        "id":"0611",
+        "stateId":"061"
+      },
+      {
+        "name":"کاشان",
+        "id":"0612",
+        "stateId":"061"
+      }
+    ]
+  }
+  ]
+}
