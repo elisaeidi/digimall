@@ -3,7 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {}
+@layer base {
+   .active{
+      background-color: yellow;
+   }
+}
 
 @layer utilities {
    body {

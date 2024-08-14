@@ -64,7 +64,7 @@ export default function ShoppingCart() {
                                                         {item.discount ?
                                                             <label><span className="text-gray-300"><del>{parseInt(item.price).toLocaleString("fa")}</del></span><span className="text-rose-400 text-xs">{item.discount.toLocaleString("fa")}%</span></label> : ''}
                                                         <br />
-                                                        <span> {((item.price * item.discount) / 100).toLocaleString("fa")}</span>
+                                                        <span> {item.discount ? ((item.price * item.discount) / 100).toLocaleString("fa") : parseInt(item.price).toLocaleString("fa")}</span>
                                                     </td>
                                                     <td className="flex justify-center items-center w-full">
                                                         <button className="cursor-pointer  outline-none bg-blue-100 px-2 rounded-lg border border-blue-100 hover:bg-blue-300 " onClick={() => item.qty < item.productCount && dispatch(increment(item.id))}>+</button>

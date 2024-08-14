@@ -7,6 +7,7 @@ import { useFormState } from "react-dom"
 
 export default function CreateForm({ ...props }) {
     const list = props.inputList
+    console.log("list>>>>>>>>>>",list)
     const [state, formAction] = useFormState(postForm, {})
 
     return (

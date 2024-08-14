@@ -1,5 +1,7 @@
+import Link from "next/link";
+
 export default function App(){
     return(
-        <div>elahe</div>
+        <Link href="/layout"/>
     )
 }
