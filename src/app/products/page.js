@@ -16,7 +16,7 @@ export default async function Products() {
   
   const product = await getproducts()
   return (
-    <div className="product">
+    <div>
       <CardComponent product={product} />
     </div>
   )

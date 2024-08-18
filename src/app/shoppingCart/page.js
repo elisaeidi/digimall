@@ -55,7 +55,7 @@ export default function ShoppingCart() {
 
 
                                             return <Link href={`./products/${item.id}`}>
-                                                <tr key={item.id} className="flex-1 flex flex-row justify-evenly items-center even:bg-gray-100 hover:bg-violet-300 hover:text-white hover:text-base border border-violet-200">
+                                                <tr key={item.id} className="flex-1 flex flex-row justify-evenly items-center even:bg-gray-100 hover:bg-violet-100 hover:text-white hover:text-base border border-violet-200">
                                                     <td className="flex justify-center w-full">
                                                         <Image className='overflow-hidden min-h-20 max-h-20 min-w-20 max-w-20' width={50} height={50} src={item.url} />
                                                     </td>
