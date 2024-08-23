@@ -20,15 +20,15 @@ export default function ViewProduct({ ...props }) {
         <div dir='rtl' className='text-violet-500'>
             {
                 view.productCount !== 0 ?
-                    <div className='flex flex-col tablet:m-4'>
-                        <div className='laptop:flex-1 laptop:flex flex-row mobile:flex flex-col items-center tablet:p-4'>
+                    <div>
+                        <div className='flex-1 flex flex-row flex-wrap items-center mobile:justify-center mobile:min-w-full'>
                             <Image
                                 src={view.url}
                                 width={250} height={150}
                                 alt={view.name}
                             />
-                            <hr className='mobile:border border-gray-200 w-full mobile:show tablet:hidden mobile:mt-2' />
-                            <div className='mx-4 mobile:my-2'>
+                            {/* <hr className='mobile:border border-gray-200 w-full mobile:mt-2' /> */}
+                            <div className='mx-4'>
                                 <label><i>نام محصول :</i> <span className="text-gray-400">{view.name}</span></label>
 
                                 <Sprator num={parseInt(view.price).toLocaleString("fa")} name='قیمت' />
@@ -39,9 +39,9 @@ export default function ViewProduct({ ...props }) {
                         </div >
                         <div>
                             <div className='flex-1 flex flex-row justify-center items-center my-8 '>
-                                <div className='mobile:flex flex-row mobile:justify-between mobile:px-2 items-center mobile:shadow-lg mobile:fixed bottom-0 mobile:min-w-full mobile:z-index'>
-                                    <button className='border rounded-xl px-4 py-2 mt-2 mx-4 hover:shadow-md hover:bg-green-400 text-gray-400 hover:text-white mb-4 mobile:bg-cyan-900 mobile:text-white ' onClick={() => { handleAddToCart(view) }}>افزودن به سبد خرید
-                                        <span className='tablet:hidden laptop:hidden text-white mobile:mr-2 mobile:text-orange-600'>{parseInt(quantity).toLocaleString("fa")}</span>
+                                <div className='mobile:fixed bottom-8 right-4'>
+                                    <button className='border rounded-xl px-4 py-2 mt-2 mx-4 hover:shadow-md hover:bg-green-400 text-gray-400 hover:text-white mb-4 mobile:bg-cyan-950' onClick={() => { handleAddToCart(view) }}>افزودن به سبد خرید
+                                        <span className='hidden mobile:inline-block mr-2 text-white'>{parseInt(quantity).toLocaleString("fa")}</span>
                                     </button>
                                     {/* <label className='tablet:hidden laptop:hidden text-white'>{parseInt(quantity).toLocaleString("fa")}</label> */}
                                 </div>

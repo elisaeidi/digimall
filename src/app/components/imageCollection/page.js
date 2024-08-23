@@ -14,24 +14,25 @@ export default async function ImageCollection({ ...props }) {
         return props.view.productkind.includes(item.productkind) && item.name !== props.view.name
     }).slice(0, 4)
     return (
-        <div dir='rtl' className='flex justify-center items-center m-4 mobile:overflow-x-scroll'>
-            {
-                result.map(item => {
-                    return <Link href={`/products/${item.id}`}>
-                        <div className='border border-solid border-neutral-300 rounded-lg m-2 hover:shadow-lg relative  bg-rose-700 text-white '>
-                            <div>
-                                < Image className='min-h-60 max-h-60 min-w-60 max-w-60 mobile:min-w-30 mobile:max-w-30 rounded-t-lg' src={item.url} width={400} height={400} />
-                            </div>
-                            <hr className='border-b-1' />
-                            <div className='flex flex-col m-4 text-white'>
-                                <label><i>قیمت :</i> {parseInt(item.price).toLocaleString("fa")}</label>
-                                <label><i>نام محصول : </i> {item.name}</label>
+        <p>image collection</p>
+        // <div dir='rtl' className='flex justify-center items-center m-4 mobile:overflow-x-scroll'>
+        //     {
+        //         result.map(item => {
+        //             return <Link href={`/products/${item.id}`}>
+        //                 <div className='border border-solid border-neutral-300 rounded-lg m-2 hover:shadow-lg relative  bg-rose-700 text-white '>
+        //                     <div>
+        //                         < Image className='min-h-60 max-h-60 min-w-60 max-w-60 mobile:min-w-30 mobile:max-w-30 rounded-t-lg' src={item.url} width={400} height={400} />
+        //                     </div>
+        //                     <hr className='border-b-1' />
+        //                     <div className='flex flex-col m-4 text-white'>
+        //                         <label><i>قیمت :</i> {parseInt(item.price).toLocaleString("fa")}</label>
+        //                         <label><i>نام محصول : </i> {item.name}</label>
 
-                            </div>
-                        </div></Link>
-                })
+        //                     </div>
+        //                 </div></Link>
+        //         })
 
-            }
-        </div>
+        //     }
+        // </div>
     )
 }

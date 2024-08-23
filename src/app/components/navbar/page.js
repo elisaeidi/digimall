@@ -38,7 +38,7 @@ export default function Navbar() {
                     </Link>
                     <Link href='/shoppingCart' className='flex mx-2 my-4 hoverLink mobile:mt-6 mobile:mr-4' >
                         <Image src={"/images/cartshoppingIcon.svg"} width={25} height={25} />
-                        <span className='text-orange-600 mx-2 mobile:show'><b>{state.cart.length > 0 ? state.cart.length : ''}</b></span>
+                        <span className='text-orange-600  mobile:show'><b>{state.cart.length > 0 ? state.cart.length : ''}</b></span>
 
                         <li className='list-none mx-1 mobile:hidden'>سبد خرید
                             <span className='text-orange-600 mx-2'><b>{state.cart.length > 0 ? state.cart.length : ''}</b></span>
