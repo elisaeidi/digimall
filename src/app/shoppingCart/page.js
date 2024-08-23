@@ -123,7 +123,7 @@ export default function ShoppingCart() {
                     :
                     <div className="flex-1 flex flex-col justify-center items-center">
                         <Image src="/images/emptyCart.webp" width={500} height={500} />
-                        <p className="text-rose-500"> <b>  ! سبد خرید شما خالی است </b></p>
+                        <p className="text-rose-500"> <b> هیچ محصولی در سبد خرید شما نیست </b></p>
                     </div>
             }
         </div >

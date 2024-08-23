@@ -17,10 +17,14 @@ export default function Sprator({ ...props }) {
         <div className="flex text-base">
             <label>
                 <i>{props.name} : </i>
-                <span className="text-gray-400">
+                <span className={`${props?.color}:text-gray-400`}>
                     {(commafy(sprateNumber))}
                 </span>
-                <span className="text-gray-400"> تومان</span>
+                {
+                    props.currencyUnit ? 
+                    <span className={`${props?.color}:text-gray-400`}> تومان</span>
+                    :""
+                }
             </label>
         </div>
     )

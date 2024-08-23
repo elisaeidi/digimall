@@ -18,67 +18,71 @@ export default function ViewProduct({ ...props }) {
 
     return (
         <div dir='rtl' className='text-violet-500'>
-        {
-            view.productCount !== 0 ?
-                <div className='flex flex-col m-4 '>
-                    <div className='flex-1 flex flex-row items-center p-4'>
-                        <Image
-                            src={view.url}
-                            width={250} height={150}
-                            alt={view.name}
-                        />
-                        <div className='mx-4'>
-                            <label><i>نام محصول :</i> <span className="text-gray-400">{view.name}</span></label>
+            {
+                view.productCount !== 0 ?
+                    <div className='flex flex-col tablet:m-4'>
+                        <div className='laptop:flex-1 laptop:flex flex-row mobile:flex flex-col items-center tablet:p-4'>
+                            <Image
+                                src={view.url}
+                                width={250} height={150}
+                                alt={view.name}
+                            />
+                            <hr className='mobile:border border-gray-200 w-full mobile:show tablet:hidden mobile:mt-2' />
+                            <div className='mx-4 mobile:my-2'>
+                                <label><i>نام محصول :</i> <span className="text-gray-400">{view.name}</span></label>
 
-                            <Sprator num={parseInt(view.price).toLocaleString("fa")} name='قیمت' />
-                            {/* <label>{view.discription}</label> */}
-                            <label><i>توضیحات :</i> <span className='text-ellipsis overflow-hidden text-gray-400'> {view.discription}</span></label>
-                        </div>
-
-                    </div >
-                    <div>
-                        <div className='flex-1 flex flex-row justify-center items-center my-8'>
-                            <div >
-                                <button className='border rounded-xl px-4 py-2 mt-2 mx-4 hover:shadow-md hover:bg-green-400 text-gray-400 hover:text-white mb-4' onClick={() => { handleAddToCart(view) }}>افزودن به سبد خرید</button>
-
+                                <Sprator num={parseInt(view.price).toLocaleString("fa")} name='قیمت' />
+                                {/* <label>{view.discription}</label> */}
+                                <label><i>توضیحات :</i> <span className='text-ellipsis overflow-hidden text-gray-400'> {view.discription}</span></label>
                             </div>
-                            {/*counter*/}
-                            <div className='flex flex-row '>
-                                <button className=' outline-none bg-blue-100 p-2 rounded-lg border border-blue-100 hover:bg-blue-300 ' onClick={() => quantity < view.productCount && setQuantity(prevqty => prevqty + 1)}>
-                                <Image src={'/images/plussvgrepocom.svg'} width={10} height={10} />
-                                </button>
-                                <p className='mx-2'>{parseInt(quantity).toLocaleString("fa")}</p>
-                                <button className=' outline-none bg-rose-100 p-2 rounded-lg border border-rose-100 hover:bg-rose-300 ' onClick={() => quantity > 0 && setQuantity(prevqty => prevqty - 1)}>
-                                <Image src={'/images/minus.svg'} width={10} height={10} />
-                                </button>
+
+                        </div >
+                        <div>
+                            <div className='flex-1 flex flex-row justify-center items-center my-8 '>
+                                <div className='mobile:flex flex-row mobile:justify-between mobile:px-2 items-center mobile:shadow-lg mobile:fixed bottom-0 mobile:min-w-full mobile:z-index'>
+                                    <button className='border rounded-xl px-4 py-2 mt-2 mx-4 hover:shadow-md hover:bg-green-400 text-gray-400 hover:text-white mb-4 mobile:bg-cyan-900 mobile:text-white ' onClick={() => { handleAddToCart(view) }}>افزودن به سبد خرید
+                                        <span className='tablet:hidden laptop:hidden text-white mobile:mr-2 mobile:text-orange-600'>{parseInt(quantity).toLocaleString("fa")}</span>
+                                    </button>
+                                    {/* <label className='tablet:hidden laptop:hidden text-white'>{parseInt(quantity).toLocaleString("fa")}</label> */}
+                                </div>
+                                {/*counter*/}
+                                <div className='flex flex-row '>
+                                    <button className=' outline-none bg-blue-100 p-2 rounded-lg border border-blue-100 hover:bg-blue-300 ' onClick={() => quantity < view.productCount && setQuantity(prevqty => prevqty + 1)}>
+                                        <Image src={'/images/plussvgrepocom.svg'} width={10} height={10} />
+                                    </button>
+                                    <p className='mx-2'>{parseInt(quantity).toLocaleString("fa")}</p>
+                                    <button className=' outline-none bg-rose-100 p-2 rounded-lg border border-rose-100 hover:bg-rose-300 ' onClick={() => quantity > 0 && setQuantity(prevqty => prevqty - 1)}>
+                                        <Image src={'/images/minus.svg'} width={10} height={10} />
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                : 
-                <div className='flex flex-col m-4 '>
-                <div className='flex-1 flex flex-row'>
-                    <Image
-                        src={view.url}
-                        width={150} height={150}
-                        alt={view.name}
-                    />
-                    <div className='mx-4'>
-                        <labl><i><b>Product Name :</b></i> <span>{view.name}</span></labl>
+                    :
+                    <div className='flex flex-col m-4 '>
+                        <div className='flex-1 flex flex-row'>
+                            <Image
+                                src={view.url}
+                                width={150} height={150}
+                                alt={view.name}
+                            />
+                            <div className='mx-4'>
+                                <labl><i><b>Product Name :</b></i> <span>{view.name}</span></labl>
 
-                        <Sprator num={view.price} name='price' />
-                        <textarea className='flex-1 flex flex-wrap p-2' rows={4} >{view.discription}</textarea>
-                    </div>
+                                <Sprator num={view.price} name='price' color="black"  />
+                                
+                                <textarea className='flex-1 flex flex-wrap p-2' rows={4} >{view.discription}</textarea>
+                            </div>
 
-                </div >
-                <div>
-                    <div className='flex-1 flex flex-row justify-center'>
-                        <label className='text-rose-600'>this product is unavilable !!! 🤦‍♂️</label>
+                        </div >
+                        <div>
+                            <div className='flex-1 flex flex-row justify-center'>
+                                <label className='text-rose-600'>this product is unavilable !</label>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
             }
-            </div>
+        </div>
 
     )
 }

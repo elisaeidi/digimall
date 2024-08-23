@@ -24,7 +24,7 @@ export default function Comments() {
     ]
 
     return (
-        <div className="flex m-4">
+        <div className="flex tablet:m-4 mobile:flex flex-col">
             {
                 commentList.map(item => {
                     return <div className="border border-violet-500 rounded-lg m-2 p-2">

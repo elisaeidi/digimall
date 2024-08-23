@@ -7,9 +7,9 @@ import { useFormState } from "react-dom"
 
 export default function CreateForm({ ...props }) {
     const list = props.inputList
-    console.log("list>>>>>>>>>>",list)
+    console.log("props>>>>>>>>>>", props)
     const [state, formAction] = useFormState(postForm, {})
-
+    console.log("formaction is >>>>>>>>", formAction)
     return (
         <form dir="rtl" action={formAction} className="flex-1 flex flex-row flex-wrap justify-center items-center grid grid-cols-3 gap-2 border border-violet-500 text-violet-500 rounded-lg p-6 m-8">
             {list.map((item, index) => {

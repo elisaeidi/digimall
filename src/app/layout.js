@@ -15,12 +15,14 @@ export default function RootLayout({ children }) {
     <html lang="en" className={inter.className}>
       <body>
         <Provivders>
-          <div className="container">
-            <div className="basis-5/6 h-screen">
+          <div className="flex-1 flex flex-row justify-start min-w-full">
+            <div className="basis-5/6 ml-6 h-screen mobile:mt-20 ">
               {children}
+              {/* <p className="mt-20">children</p> */}
             </div>
-            <div className="bg-cyan-950 basis-1/6 h-screen text-white">
+            <div className="bg-cyan-950 basis-1/6 h-screen fixed right-0 pl-8 mobile:min-w-full mobile:fixed top-0 mobile:h-20 text-white">
               <Navbar />
+              {/* <p>navbar</p> */}
             </div>
           </div>
         </Provivders>
