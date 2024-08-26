@@ -21,7 +21,7 @@ export default function ViewProduct({ ...props }) {
             {
                 view.productCount !== 0 ?
                     <div>
-                        <div className='flex-1 flex flex-row flex-wrap items-center mobile:justify-center mobile:min-w-full'>
+                        <div className='flex-1 flex flex-row flex-wrap items-center mobile:justify-center'>
                             <Image
                                 src={view.url}
                                 width={250} height={150}

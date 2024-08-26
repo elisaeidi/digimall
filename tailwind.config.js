@@ -7,11 +7,16 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'mobile': { "min": '360px', "max": "639px" },
-      'tablet': { "min": '640px', "max": "1365px" },
+      'mobile': { "min": '360px', "max": "1365px" },
+      // 'tablet': { "min": '640px', "max": "1365px" },
       'laptop': { "min": '1366', "max": "1279" },
       'laptop': { "min": '1280' }
     },
+    extend: {  
+      backgroundImage: {  
+        'custom-image': "url('/images/wellcomePage.jpg')",  
+      }  
+    } 
   },
   plugins: [],
 };
