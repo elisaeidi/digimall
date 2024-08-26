@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <Provivders>
           <div className="flex-1 flex flex-row justify-start min-w-full">
-            <div className="basis-5/6 ml-6 h-screen mobile:mt-20 ">
+            <div className="basis-5/6 ml-6 h-screen mobile:mt-20 mobile:min-w-full">
               {children}
               {/* <p className="mt-20">children</p> */}
             </div>

@@ -14,7 +14,7 @@ export default async function ImageCollection({ ...props }) {
         return props.view.productkind.includes(item.productkind) && item.name !== props.view.name
     }).slice(0, 4)
     return (
-        <div dir='rtl' className='flex flex-row mobile:overflow-x-scroll'>
+        <div dir='rtl' className='flex flex-row overflow-x-scroll'>
             {
                 result.map(item => {
                     return <Link href={`/products/${item.id}`}>
