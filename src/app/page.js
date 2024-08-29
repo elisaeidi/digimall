@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function App() {
     return (
-        <div dir='rtl' className='flex flex-row justify-center items-center h-screen bg-cover bg-center bg-custom-image'>
+        <div dir='rtl' className='flex flex-row justify-center items-center h-screen bg-cover bg-center bg-custom-image mobile:min-w-full'>
        
        {/* <h1 className='text-cyan-950 mt-8 '>DIGI MALL</h1> */}
        

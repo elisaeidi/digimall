@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <div dir='rtl'>
                 <div className='mobile:flex flex-row'>
-                    <Link href='/home' className='flex mx-2 my-4 hoverLink mobile:mt-6 mobile:mr-4' >
+                    <Link href='/home' className='flex mx-2 my-4 hoverLink mobile:mt-8 mobile:mr-8' >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
                             className="w-6 h-6"
                         >
@@ -18,7 +18,7 @@ export default function Navbar() {
 
                         <li className='list-none mx-1 mobile:hidden'>خانه</li>
                     </Link>
-                    <Link href='/profile' className='flex mx-2 my-4 hoverLink mobile:mt-6 mobile:mr-4' >
+                    <Link href='/profile' className='flex mx-2 my-4 hoverLink mobile:mt-8 mobile:mr-6' >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
                             className="w-6 h-6"
                         >
@@ -27,7 +27,7 @@ export default function Navbar() {
 
                         <li className='list-none mobile:hidden'>اطلاعات کاربری</li>
                     </Link>
-                    <Link href='/products' className='flex mx-2 my-4 hoverLink mobile:mt-6 mobile:mr-4' >
+                    <Link href='/products' className='flex mx-2 my-4 hoverLink mobile:mt-8 mobile:mr-6' >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
                             className="w-6 h-6"
                         >
@@ -36,17 +36,17 @@ export default function Navbar() {
 
                         <li className='list-none mx-1 mobile:hidden'>محصولات</li>
                     </Link>
-                    <Link href='/shoppingCart' className='flex mx-2 my-4 hoverLink mobile:mt-6 mobile:mr-4' >
+                    <Link href='/shoppingCart' className='flex mx-2 my-4 hoverLink mobile:mt-8 mobile:mr-6' >
                         <Image src={"/images/cartshoppingIcon.svg"} width={25} height={25} />
-                        <span className=' hidden text-orange-600  mobile:inline-block'><b>{state.cart.length > 0 ? state.cart.length : ''}</b></span>
+                        <span className=' hidden text-orange-600  mobile:inline-block'><b>{state.cart.length > 0 ? state.cart.length.toLocaleString("fa") : ''}</b></span>
 
                         <li className='list-none mx-1 mobile:hidden'>سبد خرید
-                            <span className='text-orange-600 mx-2'><b>{state.cart.length > 0 ? state.cart.length : ''}</b></span>
+                            <span className='text-orange-600 mx-2'><b>{state.cart.length > 0 ? state.cart.length.toLocaleString("fa") : ''}</b></span>
                         </li>
                     </Link>
                 </div>
                 <div className='fixed bottom-2'>
-                    <Link href='/aboatMe' className='flex mx-2 my-4 hoverLink mobile:mt-6 mobile:mr-4' >
+                    <Link href='/aboatMe' className='flex mx-2 my-4 hoverLink mobile:mt-8 mobile:mr-6' >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
                             className="w-6 h-6"
                         >
